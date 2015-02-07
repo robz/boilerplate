@@ -6,4 +6,4 @@ In which I finally start writing javascript in the "modern" way, by using a stat
 * ES6, JSX, type transform: [reactify](https://github.com/andreypopp/reactify)
 * minification: [uglify](https://github.com/mishoo/UglifyJS)
 * bundling: [browserify](https://github.com/substack/node-browserify)
-* autmation: [watchify](https://github.com/substack/watchify)
+* build automation: [watchify](https://github.com/substack/watchify)
