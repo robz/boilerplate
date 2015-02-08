@@ -2,14 +2,14 @@
   "version": "0.0.1",
   "main": "src/main.js",
   "dependencies": {
-    "6to5-jest": "*"
-    "react": "*",
+    "6to5-jest": "*",
+    "react": "*"
   },
   "scripts": {
     "build": "mkdir build 2> /dev/null; browserify src/main.js -t 6to5ify | uglifyjs -am > build/bundle.js",
     "check": "flow check src --profile",
-    "test": "jest"
-    "watch": "mkdir build 2> /dev/null; watchify src/main.js -t 6to5ify -o build/bundle.js -v -d",
+    "test": "jest",
+    "watch": "mkdir build 2> /dev/null; watchify src/main.js -t 6to5ify -o build/bundle.js -v -d"
   },
   "devDependencies": {
     "6to5ify": "4.1.0",
