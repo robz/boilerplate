@@ -3,7 +3,7 @@ In which I finally start writing javascript in the "modern" way, by using a stat
 
 * static type checker: [flow](https://github.com/facebook/flow)
 * testing framework: [jest](https://github.com/facebook/jest)
-* ES6, JSX, type transform: [reactify](https://github.com/andreypopp/reactify)
+* ES6, JSX, type transform: [6to5](https://github.com/6to5/6to5)
 * minification: [uglify](https://github.com/mishoo/UglifyJS)
 * bundling: [browserify](https://github.com/substack/node-browserify)
 * build automation: [watchify](https://github.com/substack/watchify)

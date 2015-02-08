@@ -12,26 +12,32 @@ module.exports = sum;
 // JSX test
 var x = <div>hi</div>;
 
-// ES6 tests (commented out the ones that don't work yet)
+// ES6 tests
 // classes
-class A { f() { return this.x } }
+class A { 
+  x: number;
+  f() { 
+    return this.x;
+  } 
+}
+
 class B extends A {
   constructor() {
     this.x = 3;
   }
 }
+
 var res = new B().f();
 
 // arrow functions
 var f = (a, b) => a + b;
 
 // array spread operator
-//var arr = [1, 2];
-//var arr2 = [0, ...arr];
+var arr = [0, ...[1, 2]];
 
 // argument spread operator
-//var arr = [1, 2];
-//var res = f(...arr);
+var arr: Array<number> = [1, 2];
+var res = sum(...arr);
 
 // rest parameters
 (function (a, ...args) { 
@@ -43,7 +49,6 @@ var f = (a, b) => a + b;
 var [x, y] = [1, 2];
 
 // computed properties
-//var a = {b:1};
-//var c = {a.b: 0};
+var obj = {[1+1]: 2};
 
 console.log('yay!');
