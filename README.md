@@ -1,5 +1,5 @@
 # boilerplate
-In which I finally start writing javascript in the "modern" way, by using a static type checker, testing framework, and an automated transform, CommonJS bundling, and minification pipeline.
+In which I finally start writing javascript in the "modern" way, by using a static type checker, testing framework, an automated transform, CommonJS bundling, and minification pipeline, and all those shiny new ES6 features.
 
 * static type checker: [flow](https://github.com/facebook/flow)
 * testing framework: [jest](https://github.com/facebook/jest)
