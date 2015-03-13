@@ -1,4 +1,5 @@
 /* @flow */
+require("babel/register");
 
 // flow test
 function sum(a: number, b: number): number {
@@ -13,12 +14,20 @@ module.exports = sum;
 var x = <div>hi</div>;
 
 // ES6 tests
+// promise
+new Promise((resolve, reject) => {
+  console.log('start promise');
+  setTimeout(resolve, 1000);
+}).then(
+  () => console.log('promise done')
+);
+
 // classes
-class A { 
+class A {
   x: number;
-  f() { 
+  f() {
     return this.x;
-  } 
+  }
 }
 
 class B extends A {
@@ -40,8 +49,8 @@ var arr: Array<number> = [1, 2];
 var res = sum(...arr);
 
 // rest parameters
-(function (a, ...args) { 
-  return a + args[0] + args[1]; 
+(function (a, ...args) {
+  return a + args[0] + args[1];
 }(1, 2, 3));
 
 // destructuring
