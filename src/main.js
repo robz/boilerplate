@@ -1,5 +1,4 @@
 /* @flow */
-require("babel/register");
 
 // flow test
 function sum(a: number, b: number): number {
@@ -14,6 +13,9 @@ module.exports = sum;
 var x = <div>hi</div>;
 
 // ES6 tests
+// babel polyfill
+require("babel/register");
+
 // promise
 new Promise((resolve, reject) => {
   console.log('start promise');
