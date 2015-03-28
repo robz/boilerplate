@@ -7,7 +7,7 @@
   },
   "scripts": {
     "build": "mkdir build 2> /dev/null; browserify src/main.js -t babelify | uglifyjs -am > build/bundle.js",
-    "check": "flow check src --profile",
+    "check": "flow src",
     "test": "jest",
     "watch": "mkdir build 2> /dev/null; watchify src/main.js -t babelify -o build/bundle.js -v -d"
   },
@@ -20,7 +20,7 @@
     "babel": "4.7.8"
   },
   "jest": {
-    "scriptPreprocessor": "./node_modules/6to5-jest",
+    "scriptPreprocessor": "./node_modules/babel-jest",
     "unmockedModulePathPatterns": ["./node_modules/react"]
   }
 }
