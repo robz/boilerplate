@@ -14,7 +14,7 @@ var x = <div>hi</div>;
 
 // ES6 tests
 // babel polyfill
-require("babel/register");
+require("babel/polyfill");
 
 // promise
 new Promise((resolve, reject) => {
